@@ -114,7 +114,7 @@ const Home2 = () => {
                 <img src={step.image} alt="" className='rounded-image' />
               </Col>
               <Col className='betterbody-col' xs={{ span: 12, order: index % 2 === 0? 1:2 }} lg={{ span: 6, order: index % 2 === 0? 2:1 }}>
-                <h4>{step.title}</h4>
+                <h4 className='betterbody-heading4'>{step.title}</h4>
                 <p>{step.description}</p>
               </Col>
             </Row>
@@ -169,8 +169,8 @@ const Home2 = () => {
                 </Card.Body>
                 </Card>
               </Col>
-              <Col className='expectation-col-text' xs lg="6">
-              <h4>{card.cardHeading}</h4>
+            <Col className='expectation-col-text' xs lg="6">  
+              <h4 className='expectation-heading'>{card.cardHeading}</h4>
               <p>{card.cardParagraph}</p>
             </Col>
             </Row>

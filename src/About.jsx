@@ -21,52 +21,52 @@ const About = () => {
       { name: "Emily Waston", role: "Co-founder & Nutritionist", expertImg: images.ExpertsImage3},
     ],
     medicalTeamList: [
-      { name: 'Oliver Wilson', role: 'Medical Director', expertImg: images.ExpertsImage1 },
-      { name: 'Ava Parker', role: 'Head Nurse', expertImg: images.ExpertsImage2 },
+      { name: 'Oliver Wilson', role: 'Medical Director', expertImg: images.ExpertsImage4 },
+      { name: 'Ava Parker', role: 'Head Nurse', expertImg: images.ExpertsImage5 },
     ],
     medicalReviewBoardList: [
-      { name: 'Ethan Davis', role: 'Medical Expert', expertImg: images.ExpertsImage1 },
-      { name: 'Lily Anderson', role: 'Research Specialist', expertImg: images.ExpertsImage1 },
-      { name: 'Henry Roberts', role: 'Senior Physician', expertImg: images.ExpertsImage1 },
-      { name: 'Grace Thompson', role: 'Pharmaceutical Advisor', expertImg: images.ExpertsImage1 },
-      { name: 'Daniel Wilson', role: 'Ethics Consultant', expertImg: images.ExpertsImage1 },
-      { name: 'Mia Harris', role: 'Regulatory Analyst', expertImg: images.ExpertsImage1 },
-      { name: 'Jacob Martin', role: 'Data Scientist', expertImg: images.ExpertsImage1 },
-      { name: 'Sophia Evans', role: 'Clinical Researcher', expertImg: images.ExpertsImage1 },
+      { name: 'Ethan Davis', role: 'Medical Expert', expertImg: images.ExpertsImage6 },
+      { name: 'Lily Anderson', role: 'Research Specialist', expertImg: images.ExpertsImage7 },
+      { name: 'Henry Roberts', role: 'Senior Physician', expertImg: images.ExpertsImage8 },
+      { name: 'Grace Thompson', role: 'Pharmaceutical Advisor', expertImg: images.ExpertsImage9 },
+      { name: 'Daniel Wilson', role: 'Ethics Consultant', expertImg: images.ExpertsImage10 },
+      { name: 'Mia Harris', role: 'Regulatory Analyst', expertImg: images.ExpertsImage11 },
+      { name: 'Jacob Martin', role: 'Data Scientist', expertImg: images.ExpertsImage12 },
+      { name: 'Sophia Evans', role: 'Clinical Researcher', expertImg: images.ExpertsImage13 },
     ],
     expertContributorsList: [
-      { name: 'William Johnson', role: 'Medical Writer', expertImg: images.ExpertsImage1 },
-      { name: 'Charlotte Thompson', role: 'Health Educator', expertImg: images.ExpertsImage1 },
-      { name: 'James Roberts', role: 'Medical Illustrator', expertImg: images.ExpertsImage1 },
-      { name: 'Avery Parker', role: 'Health Blogger', expertImg: images.ExpertsImage1 },
-      { name: 'Sofia Davis', role: 'Nutrition Consultant', expertImg: images.ExpertsImage1 },
-      { name: 'Benjamin Wilson', role: 'Fitness Trainer', expertImg: images.ExpertsImage1 },
-      { name: 'Abigail Anderson', role: 'Wellness Coach', expertImg: images.ExpertsImage1 },
-      { name: 'Elijah Thompson', role: 'Holistic Practitioner', expertImg: images.ExpertsImage1 },
+      { name: 'William Johnson', role: 'Medical Writer', expertImg: images.ExpertsImage2 },
+      { name: 'Charlotte Thompson', role: 'Health Educator', expertImg: images.ExpertsImage3 },
+      { name: 'James Roberts', role: 'Medical Illustrator', expertImg: images.ExpertsImage4 },
+      { name: 'Avery Parker', role: 'Health Blogger', expertImg: images.ExpertsImage5 },
+      { name: 'Sofia Davis', role: 'Nutrition Consultant', expertImg: images.ExpertsImage6 },
+      { name: 'Benjamin Wilson', role: 'Fitness Trainer', expertImg: images.ExpertsImage7 },
+      { name: 'Abigail Anderson', role: 'Wellness Coach', expertImg: images.ExpertsImage8 },
+      { name: 'Elijah Thompson', role: 'Holistic Practitioner', expertImg: images.ExpertsImage10 },
     ],
     expertPanelList: [
-      { name: 'Lucas Johnson', role: 'Panel Moderator', expertImg: images.ExpertsImage1 },
-      { name: 'Mila Parker', role: 'Panelist', expertImg: images.ExpertsImage1 },
+      { name: 'Lucas Johnson', role: 'Panel Moderator', expertImg: images.ExpertsImage2 },
+      { name: 'Mila Parker', role: 'Panelist', expertImg: images.ExpertsImage4 },
     ],
     corporateList: [
-      { name: 'Gabriel Davis', role: 'Corporate Communications Manager', expertImg: images.ExpertsImage1 },
-      { name: 'Victoria Wilson', role: 'Corporate Social Responsibility Officer', expertImg: images.ExpertsImage1 },
-      { name: 'Christopher Anderson', role: 'Human Resources Director', expertImg: images.ExpertsImage1 },
+      { name: 'Gabriel Davis', role: 'Corporate Communications Manager', expertImg: images.ExpertsImage12 },
+      { name: 'Victoria Wilson', role: 'Corporate Social Responsibility Officer', expertImg: images.ExpertsImage13 },
+      { name: 'Christopher Anderson', role: 'Human Resources Director', expertImg: images.ExpertsImage11 },
     ],
     engineeringList: [
-      { name: 'Leo Thompson', role: 'Lead Engineer', expertImg: images.ExpertsImage1 },
-      { name: 'Scarlett Roberts', role: 'Software Developer', expertImg: images.ExpertsImage1 },
+      { name: 'Leo Thompson', role: 'Lead Engineer', expertImg: images.ExpertsImage10 },
+      { name: 'Scarlett Roberts', role: 'Software Developer', expertImg: images.ExpertsImage9 },
     ],
     marketingAndCommercialList: [
-      { name: 'Jack Johnson', role: 'Marketing Manager', expertImg: images.ExpertsImage1 },
-      { name: 'Aria Davis', role: 'Digital Advertising Specialist', expertImg: images.ExpertsImage1 },
-      { name: 'Caleb Anderson', role: 'Sales Representative', expertImg: images.ExpertsImage1 },
-      { name: 'Eva Parker', role: 'Market Research Analyst', expertImg: images.ExpertsImage1 },
-      { name: 'Owen Wilson', role: 'Brand Ambassador', expertImg: images.ExpertsImage1 },
-      { name: 'Stella Thompson', role: 'Public Relations Coordinator', expertImg: images.ExpertsImage1 },
+      { name: 'Jack Johnson', role: 'Marketing Manager', expertImg: images.ExpertsImage7 },
+      { name: 'Aria Davis', role: 'Digital Advertising Specialist', expertImg: images.ExpertsImage8 },
+      { name: 'Caleb Anderson', role: 'Sales Representative', expertImg: images.ExpertsImage6 },
+      { name: 'Eva Parker', role: 'Market Research Analyst', expertImg: images.ExpertsImage5 },
+      { name: 'Owen Wilson', role: 'Brand Ambassador', expertImg: images.ExpertsImage4 },
+      { name: 'Stella Thompson', role: 'Public Relations Coordinator', expertImg: images.ExpertsImage3 },
     ],
     productAndDesignList: [
-      { name: 'Noah Roberts', role: 'Product Manager', expertImg: images.ExpertsImage1 },
+      { name: 'Noah Roberts', role: 'Product Manager', expertImg: images.ExpertsImage2 },
       { name: 'Luna Anderson', role: 'UX/UI Designer', expertImg: images.ExpertsImage1 },
     ],
   };
@@ -152,8 +152,10 @@ const About = () => {
               <h1 className='aboutus-expert-heading mb-5'>Leadership</h1>
               {expertList.leadershipList.map((experts, index) => (
                 <Col className='aboutus-expert-col' xs={6} lg={3}>
-                  <Row className='aboutus-expert-expertimage'>
-                    <img src={experts.expertImg} alt="" className='rounded-circle' />
+                  <Row className="aboutus-expert-expertimage">
+                    <div className="aboutus-image-container">
+                      <img src={experts.expertImg} alt="" className="rounded-circle aboutus-expert-image" />
+                    </div>
                   </Row>
                   <Row className='aboutus-expert-expertinfo'>
                     <h1>{experts.name}</h1>
@@ -167,8 +169,10 @@ const About = () => {
               <h1 className='aboutus-expert-heading mb-5'>Medical Team</h1>
               {expertList.medicalTeamList.map((experts, index) => (
                 <Col className='aboutus-expert-col' xs={6} lg={3}>
-                  <Row className='aboutus-expert-expertimage'>
-                    <img src={experts.expertImg} alt="" className='rounded-circle' />
+                  <Row className="aboutus-expert-expertimage">
+                    <div className="aboutus-image-container">
+                      <img src={experts.expertImg} alt="" className="rounded-circle aboutus-expert-image" />
+                    </div>
                   </Row>
                   <Row className='aboutus-expert-expertinfo'>
                     <h1>{experts.name}</h1>
@@ -182,8 +186,10 @@ const About = () => {
               <h1 className='aboutus-expert-heading mb-5'>Medical Review Board</h1>
               {expertList.medicalReviewBoardList.map((experts, index) => (
                 <Col className='aboutus-expert-col' xs={6} lg={3}>
-                  <Row className='aboutus-expert-expertimage'>
-                    <img src={experts.expertImg} alt="" className='rounded-circle' />
+                  <Row className="aboutus-expert-expertimage">
+                    <div className="aboutus-image-container">
+                      <img src={experts.expertImg} alt="" className="rounded-circle aboutus-expert-image" />
+                    </div>
                   </Row>
                   <Row className='aboutus-expert-expertinfo'>
                     <h1>{experts.name}</h1>
@@ -197,8 +203,10 @@ const About = () => {
               <h1 className='aboutus-expert-heading mb-5'>Expert Contributors</h1>
               {expertList.expertContributorsList.map((experts, index) => (
                 <Col className='aboutus-expert-col' xs={6} lg={3}>
-                  <Row className='aboutus-expert-expertimage'>
-                    <img src={experts.expertImg} alt="" className='rounded-circle' />
+                  <Row className="aboutus-expert-expertimage">
+                    <div className="aboutus-image-container">
+                      <img src={experts.expertImg} alt="" className="rounded-circle aboutus-expert-image" />
+                    </div>
                   </Row>
                   <Row className='aboutus-expert-expertinfo'>
                     <h1>{experts.name}</h1>
@@ -212,8 +220,10 @@ const About = () => {
               <h1 className='aboutus-expert-heading mb-5'>Expert Panel</h1>
               {expertList.expertPanelList.map((experts, index) => (
                 <Col className='aboutus-expert-col' xs={6} lg={3}>
-                  <Row className='aboutus-expert-expertimage'>
-                    <img src={experts.expertImg} alt="" className='rounded-circle' />
+                  <Row className="aboutus-expert-expertimage">
+                    <div className="aboutus-image-container">
+                      <img src={experts.expertImg} alt="" className="rounded-circle aboutus-expert-image" />
+                    </div>
                   </Row>
                   <Row className='aboutus-expert-expertinfo'>
                     <h1>{experts.name}</h1>
@@ -227,8 +237,10 @@ const About = () => {
               <h1 className='aboutus-expert-heading mb-5'>Conporate</h1>
               {expertList.corporateList.map((experts, index) => (
                 <Col className='aboutus-expert-col' xs={6} lg={3}>
-                  <Row className='aboutus-expert-expertimage'>
-                    <img src={experts.expertImg} alt="" className='rounded-circle' />
+                  <Row className="aboutus-expert-expertimage">
+                    <div className="aboutus-image-container">
+                      <img src={experts.expertImg} alt="" className="rounded-circle aboutus-expert-image" />
+                    </div>
                   </Row>
                   <Row className='aboutus-expert-expertinfo'>
                     <h1>{experts.name}</h1>
@@ -242,8 +254,10 @@ const About = () => {
               <h1 className='aboutus-expert-heading mb-5'>Engineering</h1>
               {expertList.engineeringList.map((experts, index) => (
                 <Col className='aboutus-expert-col' xs={6} lg={3}>
-                  <Row className='aboutus-expert-expertimage'>
-                    <img src={experts.expertImg} alt="" className='rounded-circle' />
+                  <Row className="aboutus-expert-expertimage">
+                    <div className="aboutus-image-container">
+                      <img src={experts.expertImg} alt="" className="rounded-circle aboutus-expert-image" />
+                    </div>
                   </Row>
                   <Row className='aboutus-expert-expertinfo'>
                     <h1>{experts.name}</h1>
@@ -257,8 +271,10 @@ const About = () => {
               <h1 className='aboutus-expert-heading mb-5'>Marketing &amp; commercial</h1>
               {expertList.marketingAndCommercialList.map((experts, index) => (
                 <Col className='aboutus-expert-col' xs={6} lg={3}>
-                  <Row className='aboutus-expert-expertimage'>
-                    <img src={experts.expertImg} alt="" className='rounded-circle' />
+                  <Row className="aboutus-expert-expertimage">
+                    <div className="aboutus-image-container">
+                      <img src={experts.expertImg} alt="" className="rounded-circle aboutus-expert-image" />
+                    </div>
                   </Row>
                   <Row className='aboutus-expert-expertinfo'>
                     <h1>{experts.name}</h1>
@@ -272,8 +288,10 @@ const About = () => {
               <h1 className='aboutus-expert-heading mb-5'>Product &amp; Design</h1>
               {expertList.productAndDesignList.map((experts, index) => (
                 <Col className='aboutus-expert-col' xs={6} lg={3}>
-                  <Row className='aboutus-expert-expertimage'>
-                    <img src={experts.expertImg} alt="" className='rounded-circle' />
+                  <Row className="aboutus-expert-expertimage">
+                    <div className="aboutus-image-container">
+                      <img src={experts.expertImg} alt="" className="rounded-circle aboutus-expert-image" />
+                    </div>
                   </Row>
                   <Row className='aboutus-expert-expertinfo'>
                     <h1>{experts.name}</h1>

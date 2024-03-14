@@ -128,14 +128,16 @@ const Bmi = () => {
             </Row>
           </div>
 
-          <div className='bmi-chart-adults my-3'>
-            <Row className='bmi-chart-adults-row'>
-              <Col className='bmi-chart-adults-col' lg={12}>
+          <div className="bmi-chart-adults my-3">
+            <Row className="bmi-chart-adults-row">
+              <Col className="bmi-chart-adults-col" lg={12}>
                 <h1 className="bmi-table-heading1 mb-4">BMI chart for adults</h1>
                 <p className="bmi-description">This is a graph of BMI categories based on the World Health Organization data. The dashed lines represent subdivisions within a major categorization.</p>
               </Col>
-              <Col className='bmi-chart' lg={12}>
-                <img src={images.BMIChart} alt='BMI-chart' className='bmi-chart'></img>
+              <Col className="bmi-chart" lg={12}>
+                <div className="bmi-chart-container">
+                  <img src={images.BMIChart} alt="BMI-chart" className="bmi-chart-image" />
+                </div>
               </Col>
             </Row>
           </div>
