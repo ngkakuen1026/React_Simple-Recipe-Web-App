@@ -129,13 +129,13 @@ const Home2 = () => {
         <Container>
           <h2 className='expertsheading'>Meet the <b>Experts</b></h2>
           <Row className='experts-row'>
-            <Col className='experts-col' lg ="6">
+            <Col className='experts-col' lg={6}>
               <p>We aim to provide unbiased guidance rooted in evidence-based information, nutritionally-reviewed recipes that satisfy, and inspiring tools to help you reach your goals in a sustainable way.</p>
             </Col>
           </Row>
           <Row className='experts-row justify-content-md-center'>
             {expertsList.map((experts, index) => (
-              <Col className='experts-col' xs lg ="3" key={index}>
+              <Col className='experts-col' xs={6} lg={3} key={index}>
                 <Row className='expertimage'>
                   <img src={experts.expertImg} alt="" className='rounded-circle' />
                 </Row>
@@ -145,7 +145,7 @@ const Home2 = () => {
                 </Row>
               </Col>
             ))}
-            <Col className='experts-col-a' xs lg ="3">
+            <Col className='experts-col-a' xs lg={3}>
               <a href="/about">And More &gt;</a>
             </Col>
           </Row>
@@ -158,7 +158,7 @@ const Home2 = () => {
           <h2 className='expectheading2'><b>Guidance</b> at your fingertips</h2>
           {cardsList.map((card, index) => (
             <Row className='expectation-row justify-content-md-center m-3'>
-              <Col className='expectation-col-card d-flex justify-content-end' xs lg="6" key={index}>
+              <Col className='expectation-col-card d-flex justify-content-end' xs={12} lg={6} key={index}>
                 <Card>
                 <Card.Img variant="top" src={card.cardImg} />
                 <Card.Body>
@@ -169,10 +169,10 @@ const Home2 = () => {
                 </Card.Body>
                 </Card>
               </Col>
-            <Col className='expectation-col-text' xs lg="6">  
-              <h4 className='expectation-heading'>{card.cardHeading}</h4>
-              <p>{card.cardParagraph}</p>
-            </Col>
+              <Col className='expectation-col-text pt-3' xs={12} lg={6}>  
+                <h4 className='expectation-heading'>{card.cardHeading}</h4>
+                <p>{card.cardParagraph}</p>
+              </Col>
             </Row>
           ))}
           <Row className='expectation-row justify-content-md-center mt-5'>
@@ -181,38 +181,38 @@ const Home2 = () => {
         </Container>
       </div>
 
-      <div className='realresult py-5'>
+      <div className="realresult py-5">
         <Container>
-          <Row className='resultheading my-4'>
-            <Col xs={6} className='resultheadingbox'>
-              <h2 className='result-subheading'>600+ SUCCESS STORIES</h2>
-              <h1 className='result-heading'>Real people. <b>Real results.</b></h1>
+          <Row className="resultheading my-4">
+            <Col xs={6} className="resultheadingbox">
+              <h2 className="result-subheading">600+ SUCCESS STORIES</h2>
+              <h1 className="result-heading">Real people. <b>Real results.</b></h1>
             </Col>
-            <Col xs={6} className='resultbuttonbox'>
-              <div className='circle-wrapper' onClick={prevSlide}>
+            <Col xs={6} className="resultbuttonbox">
+              <div className="circle-wrapper" onClick={prevSlide}>
                 <ArrowLeftCircle />
               </div>
-              <div className='circle-wrapper' onClick={nextSlide}>
+              <div className="circle-wrapper" onClick={nextSlide}>
                 <ArrowRightCircle />
               </div>
             </Col>
           </Row>
-          <Row className='resultslider'>
+          <Row className="resultslider">
             <Row>
-              <Col xs={12} md={6} className='resultimgbox'>
+              <Col xs={12} md={6} className="resultimgbox my-5">
                 <Carousel slide={false}>
                   <Carousel.Item>
-                    <img src={personlist[activeIndex].beforeImg} alt='Before' className='' />
+                    <img src={personlist[activeIndex].beforeImg} alt="Before" className="result-image" />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={personlist[activeIndex].afterImg} alt='After' className='' />
+                    <img src={personlist[activeIndex].afterImg} alt="After" className="result-image" />
                   </Carousel.Item>
                 </Carousel>
               </Col>
-              <Col xs={12} md={6} className='resultbox'>
-                <div className='resulttext'>
-                  <h2 className='resultquote'>"{personlist[activeIndex].quote}"</h2>
-                  <p className='resultdetail'>{personlist[activeIndex].name}, {personlist[activeIndex].age}, lost {personlist[activeIndex].pounds} pounds</p>
+              <Col xs={12} md={6} className="resultbox">
+                <div className="resulttext">
+                  <h2 className="resultquote">"{personlist[activeIndex].quote}"</h2>
+                  <p className="resultdetail">{personlist[activeIndex].name}, {personlist[activeIndex].age}, lost {personlist[activeIndex].pounds} pounds</p>
                 </div>
               </Col>
             </Row>

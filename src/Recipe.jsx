@@ -14,6 +14,9 @@ const Recipe = () => {
   const [query, setQuery] = useState('');
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(false); // State for indicating loading state
+  const [currentPage, setCurrentPage] = useState(1);
+  const resultsPerPage = 2; // Number of results to display per page
+
 
   const searchRecipes = async () => {
     setLoading(true); // Show the spinner while loading
@@ -33,6 +36,20 @@ const Recipe = () => {
     e.preventDefault();
     searchRecipes();
   };
+
+  // result display page swapping
+  const nextPage = () => {
+    setCurrentPage((prevPage) => prevPage + 1);
+  };
+
+  const prevPage = () => {
+    setCurrentPage((prevPage) => prevPage - 1);
+  };
+
+  // Calculate the index range for the current page
+  const indexOfLastResult = currentPage * resultsPerPage;
+  const indexOfFirstResult = indexOfLastResult - resultsPerPage;
+  const currentResults = recipes.slice(indexOfFirstResult, indexOfLastResult);
 
   return (
     <div className="recipe">
@@ -63,7 +80,29 @@ const Recipe = () => {
             </Row>
           </div>
           
-          <div className="recipe-seach-result">
+          <div className='pagination-row my-4'>
+            {recipes.length > resultsPerPage && (
+              <Row className="text-center">
+                <Col>
+                  <button className="pagination-button" onClick={prevPage} disabled={currentPage === 1}>
+                    Previous
+                  </button>
+                  {Array.from({ length: Math.ceil(recipes.length / resultsPerPage) }).map(
+                    (page, index) => (
+                      <button key={index} className={`pagination-button ${currentPage === index + 1 ? 'active' : ''}`} onClick={() => setCurrentPage(index + 1)}>
+                        {index + 1}
+                      </button>
+                    )
+                  )}
+                  <button className="pagination-button" onClick={nextPage} disabled={indexOfLastResult >= recipes.length}>
+                    Next
+                  </button>
+                </Col>
+              </Row>
+            )}
+          </div>
+
+          <div className='recipe-seach-result'>
             {loading ? ( // Show spinner if loading
               <Row className="text-center mt-4">
                 <Col>
@@ -73,8 +112,8 @@ const Recipe = () => {
                 </Col>
               </Row>
             ) : (
-              recipes.map((recipe) => (
-                <Row key={recipe.recipe.uri} className="recipe-card m-3">
+              currentResults.map((recipe) => (
+                <Row key={recipe.recipe.uri} className="recipe-card">
                   <Col className='recipe-card-left' xs={12} lg={6}>
                     <Row className='recipe-card-image'> 
                       <img src={recipe.recipe.image} alt={recipe.recipe.label} className='recipe-image'></img>
@@ -124,12 +163,12 @@ const Recipe = () => {
                         <p className='recipe-nurtients-text'><b>Water:</b> {Math.round(recipe.recipe.totalNutrients.WATER.quantity)} {recipe.recipe.totalNutrients.WATER.unit}</p>
                       </Col>
                     </Row>
-
                   </Col>
                 </Row>
               ))
             )}
           </div>
+
         </Container>
       </div>
   );

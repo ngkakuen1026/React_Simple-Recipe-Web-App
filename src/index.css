@@ -286,6 +286,27 @@
   font-size: 1.5rem;
 }
 
+.pagination-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 8px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #ddd;
+}
+
+.pagination-button.active {
+  background-color: #ccc;
+  color: #fff;
+}
+
 /* Bmi.js */
 .bmi {
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(239,239,239,1) 50%, rgba(69,236,252,0.7791491596638656) 100%);
@@ -991,8 +1012,10 @@ p a:hover {
   filter: drop-shadow(5px 5px 13px #000000);
 }
 
-.resultimgbox img {
+.result-image {
   border-radius: 20px;
+  max-width: 100%;
+  height: auto;
 }
   
 .resultbuttonbox {
@@ -1011,12 +1034,10 @@ p a:hover {
 .resultquote {
   font-weight: lighter;
   font-style: italic;
-  padding: 1% 0;
 }
   
 .resultdetail {
   font-weight: lighter;
-  padding: 1% 0;
 }
 
 .circle-wrapper {
